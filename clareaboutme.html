@@ -1,10 +1,262 @@
-<! DOCTYPW html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clare Ferris - Personal Blog & Journal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
 
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
 
-<p> Clare Ferris</p>
-<p> Journal </p>
-<p> School </p>
-<p> Co-op </p>
-<p> Travel <p>
-<p><a href="">Journal</a></p>
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .hero {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .blog-post {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-post h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-date {
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-post p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clare Ferris</h1>
+        <p>Exploring life through learning, travel, and growth</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#school">School</a></li>
+            <li><a href="#coop">Co-op</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h2>Welcome to My Blog!</h2>
+            <p>Hi! I'm Clare. This is my personal space to share my thoughts, experiences, and adventures. 
+               From academic pursuits to travel stories, co-op insights to everyday reflections—join me 
+               as I document my journey through life.</p>
+        </section>
+
+        <!-- Journal Section -->
+        <section class="section" id="journal">
+            <h2>📓 Journal</h2>
+            <p>Reflections and thoughts on life, learning, and personal growth.</p>
+            
+            <div class="blog-post">
+                <h3>Finding Balance in Busy Times</h3>
+                <p class="blog-date">August 14, 2026</p>
+                <p>Today I realized how important it is to take time for myself amidst all the chaos. 
+                   Whether it's school, work, or travel plans, it's crucial to pause and reflect...</p>
+            </div>
+
+            <div class="blog-post">
+                <h3>Lessons from This Summer</h3>
+                <p class="blog-date">July 20, 2026</p>
+                <p>This summer has been a rollercoaster. Here are some of the key lessons I've learned 
+                   that I want to remember...</p>
+            </div>
+        </section>
+
+        <!-- School Section -->
+        <section class="section" id="school">
+            <h2>🎓 School</h2>
+            <p>My academic journey, projects, and learning experiences.</p>
+            
+            <div class="blog-post">
+                <h3>Current Courses & Projects</h3>
+                <p class="blog-date">Fall 2026</p>
+                <p>This semester I'm focusing on [Your Areas], and I'm particularly excited about...</p>
+            </div>
+
+            <div class="blog-post">
+                <h3>Study Tips That Actually Work</h3>
+                <p class="blog-date">August 1, 2026</p>
+                <p>After years of studying, here are the techniques that have helped me most...</p>
+            </div>
+        </section>
+
+        <!-- Co-op Section -->
+        <section class="section" id="coop">
+            <h2>💼 Co-op</h2>
+            <p>Professional development, internships, and career insights.</p>
+            
+            <div class="blog-post">
+                <h3>First Day at [Company Name]</h3>
+                <p class="blog-date">May 15, 2026</p>
+                <p>Starting my co-op was both exciting and nerve-wracking. Here's what I've learned 
+                   in my first week...</p>
+            </div>
+
+            <div class="blog-post">
+                <h3>Networking Tips for Co-op Students</h3>
+                <p class="blog-date">April 30, 2026</p>
+                <p>Building professional relationships is crucial. Here are my favorite strategies...</p>
+            </div>
+        </section>
+
+        <!-- Travel Section -->
+        <section class="section" id="travel">
+            <h2>✈️ Travel</h2>
+            <p>Adventures, discoveries, and stories from my travels around the world.</p>
+            
+            <div class="blog-post">
+                <h3>Exploring [Destination]</h3>
+                <p class="blog-date">July 2026</p>
+                <p>My recent trip to [destination] was unforgettable. Here are my favorite moments 
+                   and hidden gems I discovered...</p>
+            </div>
+
+            <div class="blog-post">
+                <h3>Travel Packing Essentials</h3>
+                <p class="blog-date">June 10, 2026</p>
+                <p>Over the years, I've learned what makes or breaks a trip. Here's my ultimate 
+                   packing list...</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Clare Ferris. All rights reserved.</p>
+        <p>
+            <a href="https://github.com" target="_blank">GitHub</a> | 
+            <a href="https://twitter.com" target="_blank">Twitter</a> | 
+            <a href="mailto:your.email@example.com">Email</a>
+        </p>
+    </footer>
+</body>
+</html>
